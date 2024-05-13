@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-light-color: rgb(255, 255, 255);
+  --main-dark-color: rgb(22, 17, 58);
+  --main-dark-color-80: rgba(38, 40, 83, 0.8);
+  --second-dark-color: rgb(22, 17, 58);
+  --second-light-color: rgb(239, 241, 241);
+  --gray-color: rgb(112, 94, 94);
+  --accent-color: rgb(61, 159, 172);
+  --accent-color-30: rgb(64, 207, 216, 0.3);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* font-family: 'Rubik', sans-serif; */
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--main-dark-color);
+  color: var(--main-light-color);
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+#mainBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#mainBg img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+
+  @media (max-width: 950px) {
+    height: 100vh;
+  }
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.main {
+  margin-top: 135px;
+  flex-grow: 1;
+}
+
+.container {
+  /* max-width: 1160px; */
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.title {
+  color: var(--main-light-color);
+  font-weight: 700;
+}
+
+.title--s {
+  font-size: 24px;
+}
+
+.title--m {
+  font-size: 32px;
+}
+
+.title--l {
+  font-size: 48px;
+}

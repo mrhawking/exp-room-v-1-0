@@ -1,0 +1,6 @@
+.roundedContainer {
+  padding: 30px;
+  background-color: var(--main-dark-color-80);
+  border: 1px solid var(--main-light-color);
+  border-radius: 50px;
+}

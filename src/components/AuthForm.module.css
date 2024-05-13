@@ -1,0 +1,28 @@
+.formWrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  gap: 50px;
+}
+
+.form {
+  flex-basis: 700px;
+}
+
+.formInputs {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.formInput {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.formButton {
+  justify-self: center;
+}
